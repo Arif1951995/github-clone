@@ -2,32 +2,120 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.GetStarted {
+  display: flex;
+  justify-content: space-around;  
+  background-color: #2b3137;
+  height: 90vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.GetStarted > div {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
+.Enterprise {
+  display: flex;
+  margin: 5%;
+}
+.Enterprise > div {
+  margin: 3%;
+}
+.CardComponent {
+  width: '18rem'
+}
+.IntroCard {
+  color: white;
+  margin: 80%;
+}
+.Businesses {
+  margin: 5% auto;
+  width: 70%;
 
-.App-link {
-  color: #61dafb;
+}
+.Businesses p {
+  margin: 0;
+}
+.Businesses img {
+  width: 40px; 
+  margin: 0 50px;
+
+}
+.Robot  {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  
+}
+.Robot > div {
+  width: 40%;
+  display: flex;
+  flex-direction:  column;
+  justify-content: space-around;
+  height: 80vh;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Robot h1 {
+  font-size: 1em;
+}
+.CardGallery {
+  margin: 5% 0;
+}
+.CardGallery > div {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.CodeSecurity {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% auto;
+  width: 90%;
+}
+.CodeSecurity > img {
+  width: 40%;
+}
+.CodeSecurity > div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.CodeSecurity  h1 {
+  font-size: 1.4em;
+}
+.ImgGallery {
+  width: 90%;
+  margin: 0 auto;
+  height: 40vh;
+
+}
+.ImgGallery > img {
+  width: 120px;
+  border-radius: 100%;
+}
+.ImgGallery > img:nth-child(even) {
+  margin-top: 12%;
+}
+.DeveloperGallery {
+  display: flex;
+  justify-content: space-around;
+}
+.SignUpForm {
+  color: white;
+  background-color: #24292e;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.SignUpForm > div  {
+  width: 70%;
+  margin: 10% auto;
 }

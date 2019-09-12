@@ -1,0 +1,42 @@
+import React from "react"
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import FormControl from 'react-bootstrap/FormControl'
+
+
+
+
+
+
+const NavbarComponent = props => {
+    const styles = {backgroundColor: "#24292e", color: "white"}
+    return (
+      <Navbar style={styles}  expand="lg">
+  <Navbar.Brand href="#home">
+    <img width="30px" src="data:image/png;base64,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" />
+  </Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav  className="mr-auto">
+      <Nav.Link id="NavItem" style={styles} href="#whyGithub">Why Github</Nav.Link>
+      <Nav.Link id="NavItem" style={styles} href="#enterprise">Enterprise</Nav.Link>
+      <Nav.Link id="NavItem" style={styles} href="#enterprise">Marketplace</Nav.Link>
+      <Nav.Link id="NavItem" style={styles} href="#enterprise">prices</Nav.Link>
+     
+      
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search Github" className="mr-sm-2" />
+      <Button variant="dark" color="light" padding="2">Sign in</Button>
+      <Button style={{margin: "5px", border: "2px solid white"}} variant="dark" color="light" outline="light">Sign up</Button>
+
+    </Form>
+  </Navbar.Collapse>
+</Navbar>
+    );
+}
+
+export default NavbarComponent
